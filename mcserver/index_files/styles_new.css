@@ -1,0 +1,132 @@
+/* Styles */
+
+body,input,textarea,button{font-family:"Microsoft YaHei UI","Microsoft YaHei",sans-serif;}
+body{background-color:#999999;}
+a{text-decoration:none;color:#0099ff;transition:0.1s;}
+a:hover{color:#cccccc;}
+hr{border:1px solid #0099ff;}
+#navi{color:#ffffff;background-color:#0099ff;border-bottom:4px solid #80ccff;box-shadow:0 0 5px #999999;}
+#navi #title{color:#ffffff;}
+#navi #title:hover{color:#80ccff;}
+#navi_container{background-color:#0099ff;transition:0.25s;}
+#navi_container li a{color:#ffffff;transition:background-color 0.25s;}
+#navi_container li a:hover{background-color:#80ccff;color:#ffffff;}
+.navi_menu_button{background-color:#0099ff;}
+.menu_button_three_bars .bar{background-color:#80ccff;border-radius:1px;}
+#main{background-color:#f6f6f6;}
+.main_content{color:#999999;border:6px solid #fbfbfb;background-color:#ffffff;overflow:hidden;}
+#footer{color:#dddddd;background-color:#999999;box-shadow:0 0 5px #999999;}
+#footer #links{background-color:#cccccc;}
+#footer #links .caption{color:#999999;background-color:#cccccc;float:left;}
+#footer #links a{color:#ffffff;}
+#footer #links a:hover{background-color:#999999;}
+.content{color:#666666;}
+.section{border-right:2px solid #80ccff;color:#aaaaaa;transition:background-color 0.25s;}
+.section .description{color:#666666;}
+.section:hover{background-color:#aedfff;}
+.qqchat{background-color:#80ccff;color:#ffffff;border-right:4px solid #0099ff;}
+.qqchat:hover{color:#0099ff;}
+.qqgroup{background-color:#0099ff;color:#ffffff;border-right:4px solid #80ccff;}
+.qqgroup:hover{color:#80ccff;}
+.btn{background-color:#0099ff;padding:1px 15px;border:2px solid #0099ff;color:#ffffff;border-radius:1px;transition:border 0.1s;outline:none;}
+.btn:hover{border:2px solid #80ccff;}
+.btn:active{background-color:#80ccff;}
+.inputbox{border:1px solid #e0e0e0;border-radius:1px;padding:3px;transition:border-color 0.25s;outline:none;}
+.inputbox:hover{border:1px solid #c0c0c0;}
+.inputbox:focus{border:2px solid #0099ff;padding:2px;}
+
+/* Layout */
+
+html{font-family:"Microsoft YaHei UI","Microsoft YaHei",sans-serif;}
+body{font-size:15px;padding:0;margin:0;}
+#title{font-size:24px;}
+#navi{position:fixed;width:80%;padding:0 10%;height:48px;line-height:48px;}
+#navi_logo{float:left;height:30px;padding:9px;padding-left:0px;}
+#navi_container{font-size:12px;float:right;right:0;}
+#navi_container li{display:inline;float:left;font-size:12px;}
+#navi_container li a{display:inline-block;height:48px;line-height:48px;padding:0 15px;}
+.navi_menu_button{display:none;position:absolute;left:0;top:0;border:0;padding:0;cursor:pointer;}
+.menu_button_three_bars{width:34px;height:34px;margin:0;padding:5% 10%;}
+.menu_button_three_bars .bar{width:90%;height:15%;margin:15% 5%;}
+#main{margin:0;padding:52px 0;}
+.main_content{width:70%;text-align:center;margin:50px auto;font-size:18px;line-height:48px;}
+#footer{bottom:0px;left:0px;right:0px;padding:0;padding-bottom:10px;font-size:12px;line-height:20px;}
+#footer #links{margin:0;margin-bottom:10px;padding:0 10%;}
+#footer #links .caption{float:left;display:block;padding:10px;}
+#footer #links a{float:left;display:block;padding:10px;}
+#footer #links .other_links{float:right;}
+#footer .left{float:left;margin-left:10%;}
+#footer .right{float:right;margin-right:10%;}
+.clearfix,#footer:after,#footer #links:after{content:" ";display:block;height:0;clear:both;visibility:hidden;}
+.content{width:70%;margin:20px auto;padding:0 15%;line-height:30px;}
+.section{margin:50px 20%;padding:20px;font-size:12px;}
+.section .description{width:70%;margin:10px auto;font-size:16px;}
+.section a{margin-right:10px;font-size:14px;}
+.section .link{width:100%;margin:30px 0;text-align:center;}
+.section .link a{font-size:64px;}
+.section .link a:hover{color:#0099ff;}
+.qqchat{padding:3px 5px;font-size:13px;}
+.qqgroup{padding:3px 5px;font-size:13px;}
+.btn,.inputbox{font-size:14px;margin:10px;}
+
+/* Alternative Layout */
+
+@media screen and (min-width:1600px){
+    body{font-size:18px;}
+	#title{font-size:30px;}
+    #navi{height:54px;line-height:54px;}
+	#navi_logo{height:36px;padding:9px;padding-left:0px;}
+    #navi_container li{font-size:16px;}
+    #navi_container li a{height:54px;line-height:54px;padding:0 24px;}
+    #main{padding:58px 0;}
+    .main_content{width:60%;margin:80px auto;font-size:20px;line-height:54px;}
+    #footer{padding-bottom:15px;font-size:14px;}
+    .content{width:60%;padding:30px 20%;}
+    .section{margin:50px 20%;padding:30px;font-size:16px;}
+    .section .description{width:60%;margin:20px auto;font-size:20px;}
+    .section a{margin-right:20px;font-size:16px;}
+    .section .link a{font-size:72px;}
+    .qqchat{padding:3px 8px;font-size:15px;}
+    .qqgroup{padding:3px 8px;font-size:15px;}
+    .btn,.inputbox{font-size:16px;}
+}
+
+@media screen and (max-width:1000px){
+    body{font-size:14px;}
+	#title{font-size:20px;}
+    #navi{width:90%;padding:0 5%;height:44px;line-height:44px;}
+	#navi_logo{height:28px;padding:8px;padding-left:0px;}
+    #navi_container li a{height:44px;line-height:44px;padding:0 10px;}
+    #main{padding:48px 0;}
+    .main_content{width:80%;margin:30px auto;font-size:16px;line-height:44px;}
+    .content{width:80%;padding:0 10%;}
+    .section{margin:30px 15%;padding:20px;font-size:12px;}
+    .section .link a{font-size:54px;}
+    .btn,.inputbox{font-size:12px;}
+}
+
+@media screen and (max-width:800px){
+	body{font-size:16px;}
+	#title{font-size:20px;}
+    #navi{height:40px;line-height:40px;text-align:center;}
+	#navi_logo{display:none;}
+    .navi_menu_button{display:inline;}
+    #navi_container{float:none;position:fixed;left:0;top:40px;bottom:0;width:0;overflow:hidden;float:none;box-shadow:0 10px 10px #999999;}
+    #navi_container li{float:none;display:block;width:100%;height:36px;line-height:36px;float:left;}
+    #navi_container li a{width:100%;height:40px;line-height:40px;padding:0;font-size:13px;}
+    #main{padding:44px 0;}
+    .main_content{width:100%;margin:10px 0;font-size:14px;border-left:0;border-right:0;line-height:36px;}
+    .content{width:96%;padding:0 2%;}
+    .section{margin:10px;}
+    .section .description{width:100%;margin:0px auto;font-size:14px;}
+    .section .link a{font-size:40px;}
+    .qqchat,.qqgroup,.btn,.inputbox{font-size:16px;}
+	#footer #links{padding:0;font-size:13px;}
+	#footer #links .other_links{display:none;}
+	#footer #links .caption{float:none;padding:10px 10%;}
+	#footer #links a{float:none;padding:10px 10%;}
+	#footer .left,#footer .right{float:none;margin:0 10%;}
+	.btn{padding:6px 24px;}
+	.inputbox{padding:6px;}
+	.inputbox:focus{border-width:2px;padding:5px;}
+}
