@@ -1,0 +1,29 @@
+function login() {
+    var username = getValue("loginUsername");
+    var password = getValue("loginPassword");
+    
+    setInnerHTML("loginResult", "登录中...");
+    
+    var data = new Array(
+        "username=" + username,
+        "password=" + password
+    );
+    
+    var xmlhttp = new XMLHttp();
+    xmlhttp.postForm(data, "post/login.php", function(result) {
+		if (result != "") {
+			setInnerHTML("loginResult", "登陆成功！");
+			var uuid = result;
+			setCookie("uuid", uuid, 86400);
+		} else setInnerHTML("loginResult", "登陆失败！");
+    });
+}
+
+function logout() {
+	setInnerHTML("loginStatus", "退出中...");
+	var xmlhttp = new XMLHttp();
+	xmlhttp.postForm(new Array("uuid=" + getCookie("uuid")), "post/logout.php", function(result) {
+		setInnerHTML("loginStatus", "仅供测试，用户数据不保留");
+		delCookie("uuid");
+	});
+}
