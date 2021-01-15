@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Random</title>
+    </head>
+    <script>
+    function randomNum(minNum,maxNum){ 
+        switch(arguments.length){ 
+            case 1: 
+                return parseInt(Math.random()*minNum+1,10); 
+            break; 
+            case 2: 
+                return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); 
+            break; 
+                default: 
+                    return 0; 
+                break; 
+        } 
+    } 
+    var nowTime=new Date()
+    function startGet(){
+        document.getElementById("setHourTime").disabled=true
+        document.getElementById("setMinuteTime").disabled=true
+        document.getElementById("getNum").disabled=true
+        setTimeout(getNum, 60000);
+    }
+    function getNum(){
+        if(nowTime.getHours()==document.getElementById("setHourTime").value){
+            document.getElementById("NumA").innerText=randomNum(1,10);
+        }
+        if(nowTime.getMinutes()==document.getElementById("setMinuteTime").value){  
+            document.getElementById("NumB").innerText=randomNum(1,10);
+        }
+    }
+    </script>
+    <div onclick="randomNum(1,10);">
+        <span>
+            获得数字需要 60 s 请耐心等待。
+        </span>
+        </br>
+        <span>
+            设定时间
+        </span>
+        </br>
+        <span>
+            小时：
+        </span>
+        <input id="setHourTime" type="text">
+        </br>
+        <span>
+            分钟：
+        </span>
+        <input id="setMinuteTime" type="text">
+        </br>
+        <input id="getNum" type="button" value="获得" onclick="startGet()">
+        </br>
+        <span>
+            获得数字 A：
+        </span>
+        <span id="NumA">
+            未获得
+        </span>
+    </br>
+    <span>
+        获得数字 B：
+    </span>
+    <span id="NumB">
+        未获得
+    </span>
+    </div>
+</html>
