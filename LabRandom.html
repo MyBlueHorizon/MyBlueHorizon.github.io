@@ -17,11 +17,12 @@
                 break; 
         } 
     } 
-    var nowTime=new Date()
+    var nowTime=new Date
     function startGet(){
         document.getElementById("setHourTime").disabled=true
         document.getElementById("setMinuteTime").disabled=true
         document.getElementById("getNum").disabled=true
+        nowTime=new Date()
         setTimeout(getNum, 60000);
     }
     function getNum(){
