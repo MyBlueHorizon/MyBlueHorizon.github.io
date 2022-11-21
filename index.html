@@ -1,85 +1,84 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-        <link rel="stylesheet" type="text/css" href="./index_files/styles_new.css">
-            <meta name="author" content="MyBlueHorizon">
-            <meta name="keywords" content="ATHS,ATHS Studio">
-            <meta name="description" content="ATHS Studio">
-            <link rel="shortcut icon" type="image/ico" href="./favicon.ico">
-            <title>云边小站</title>
-            <script async="" src="./index_files/analytics.js.download"></script><script type="text/javascript" src="./index_files/ajax.js.download"></script>
-			<script type="text/javascript" src="./index_files/functions.js.download"></script>
-			<script type="text/javascript">
-				function navi_menu_click(){
-					var navi=document.getElementById("navi_container");
-					var width=navi.style.width;
-					if(width.indexOf("80%")==-1){
-						navi.style.width="80%";
-						window.ontouchmove=function(e){
-							var touch=e.changedTouches[0];
-							touchX=touch.screenX;
-							touchY=touch.screenY;
-							if(navi.contains(e.target))e.preventDefault();
-						};
-					}else{
-						navi.style.width=null;
-						window.ontouchmove=null;
-					}
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    	<link rel="stylesheet" type="text/css" href="./index_files/styles_new.css">
+        <meta name="author" content="MyBlueHorizon">
+        <meta name="keywords" content="ATHS,ATHS Studio">
+        <meta name="description" content="ATHS Studio">
+        <link rel="shortcut icon" type="image/ico" href="./favicon.ico">
+        <title>云边小站</title>
+        <script async="" src="./index_files/analytics.js.download"></script><script type="text/javascript" src="./index_files/ajax.js.download"></script>
+		<script type="text/javascript" src="./index_files/functions.js.download"></script>
+		<script type="text/javascript">
+			function navi_menu_click(){
+				var navi=document.getElementById("navi_container");
+				var width=navi.style.width;
+				if(width.indexOf("80%")==-1){
+					navi.style.width="80%";
+					window.ontouchmove=function(e){
+						var touch=e.changedTouches[0];
+						touchX=touch.screenX;
+						touchY=touch.screenY;
+						if(navi.contains(e.target))e.preventDefault();
+					};
+				}else{
+					navi.style.width=null;
+					window.ontouchmove=null;
 				}
-			</script>
-        </head>
-        <body>
-            <div id="navi">
-                <div class="navi_menu_button" onclick="navi_menu_click();">
-                    <div class="menu_button_three_bars">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                </div>
-                <a id="title" href="https://mybluehorizon.github.io/">
-                    云边小站
-                </a>
-                <div id="navi_container">
-			<li><a href="https://mybluehorizon.github.io/">主页</a></li>
-			<li><a href="https://mybluehorizon.github.io/LabRandom">Lab</a></li>
+			}
+		</script>
+    </head>
+    <body>
+        <div id="navi">
+            <div class="navi_menu_button" onclick="navi_menu_click();">
+                <div class="menu_button_three_bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
             </div>
-            <div id="main">
-<div class="main_content">
-	春去秋来
-	<br>
-	时光在流逝
-	<br>
-        我们在成长
-	<br>
-        一切在变化
-	<br>
-	……
-	<br>
-	欢迎来到这里！
-</div>
-<div class="section">
-    <div class="description">偶然的创造 ——</div>
-    <div class="link"><a href="https://mybluehorizon.github.io/ClassTable">ClassTable</a></div>
-    下节什么课？ 桌面课表告诉你。
-    <br>
-    <a href="https://www.github.com/MyBlueHorizon/ClassTable">GitHub</a>
-    <a href="https://www.github.com/MyBlueHorizon/ClassTable/releases">下载页面</a>
-</div>
-    </div>
+            <a id="title" href="https://mybluehorizon.github.io/">
+                云边小站
+            </a>
+            <div id="navi_container">
+				<li><a href="https://mybluehorizon.github.io/">主页</a></li>
+				<li><a href="https://mybluehorizon.github.io/LabRandom">Lab</a></li>
+				<li><a href="https://github.com/MyBlueHorizon">GitHub</a></li>
+            </div>
+        </div>
+        <div id="main">
+			<div class="main_content">
+				春去秋来
+				<br>时光在流逝
+				<br>我们在成长
+				<br>一切在变化
+				<br>……
+				<br>欢迎来到这里！
+			</div>
+			<div class="section">
+				<div class="description">偶然的创造 ——</div>
+				<div class="link"><a href="https://mybluehorizon.github.io/ClassTable">ClassTable</a></div>
+					下节什么课？ 桌面课表告诉你。
+					<br>
+					<a href="https://www.github.com/MyBlueHorizon/ClassTable">GitHub</a>
+					<a href="https://www.github.com/MyBlueHorizon/ClassTable/releases">下载页面</a>
+				</div>
+			</div>
 		<div id="footer">
 			<div id="links">
 				<span class="caption">友情链接</span>
 				<a href="https://www.newinfinideas.cn/">新创无际</a>
-			    </div>
-			    <div class="left">
-				© ATHS Studio 2016 - 2020	
-				<br>上一次更新于 2020/4/12
-			    </div>
-			    <div class="right">
+			</div>
+			<div class="left">
+				© ATHS Studio 2016 - 2022	
+				<br>上一次更新于 2022/11/22
+			</div>
+			<div class="right">
 				Original by INFINIDEAS 2015 - 2017
 				<br>site content under CC BY-SA 3.0 Unported.
 			</div>
 		</div>
-</body></html>
+	</body>
+</html>
