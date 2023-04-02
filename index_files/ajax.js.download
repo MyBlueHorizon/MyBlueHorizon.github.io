@@ -1,5 +1,3 @@
-// 瞎写的ajax
-
 function XMLHttp() {
     if (!window.XMLHttpRequest) {
         // alert("辣鸡IE6！");
@@ -33,5 +31,3 @@ function XMLHttp() {
         this.xmlhttp.send(data.join("&"));
     }
 }
-
-// 蛤蛤蛤蛤各种注释各种空格浪费你流量233333
