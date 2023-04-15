@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>学习资源库</title>
-  </head>
-  <body>
-    <script> 
-      window.location.href="https://melmean-my.sharepoint.com/:f:/g/personal/tianjizhishang_melmean_onmicrosoft_com/EtAkxsMNlmdPpZHWqZ58HFwB7N9gjCSvkD88iCn661RZmQ"; 
-    </script>
-  </body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+        <meta name="robots" content="noindex, nofollow">
+        <link rel="stylesheet" type="text/css" href="./index_files/styles.css">
+        <title>云边小站 - 学习资源库</title>
+        <script type="text/javascript" src="./index_files/ajax.js.download"></script>
+        <script type="text/javascript" src="./index_files/functions.js.download"></script>
+        <script type="text/javascript">
+            function navi_menu_click(){
+                var navi=document.getElementById("navi_container");
+                var width=navi.style.width;
+                if(width.indexOf("80%")==-1){
+                    navi.style.width="80%";
+                    window.ontouchmove=function(e){
+                        var touch=e.changedTouches[0];
+                        touchX=touch.screenX;
+                        touchY=touch.screenY;
+                        if(navi.contains(e.target))e.preventDefault();
+                    };
+                }else{
+                    navi.style.width=null;
+                    window.ontouchmove=null;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="navi">
+            <div class="navi_menu_button" onclick="navi_menu_click();">
+                <div class="menu_button_three_bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <a id="title" href="https://mybluehorizon.github.io/">
+                云边小站
+            </a>
+            <div id="navi_container">
+                <li><a href="https://mybluehorizon.github.io/">主页</a></li>
+                <li><a href="https://mybluehorizon.github.io/blog">博客</a></li>
+                <li><a href="https://mybluehorizon.github.io/ResourceLibrary">资源库</a></li>
+                <li><a href="https://github.com/MyBlueHorizon">GitHub</a></li>
+            </div>
+        </div>
+        <div id="main">
+            <div class="main_content">
+                目前仍处测试阶段，暂不对外开放。
+            </div>
+            <div class="main_content">
+                书山有路勤为径，
+                <br>学海无涯苦作舟。
+                <br>……
+                <br>欢迎来到学习资源库！
+            </div>
+            <div class="section">
+                <div class="description">资源的集合 ——</div>
+                <div class="link"><a href="https://melmean-my.sharepoint.com/:f:/g/personal/tianjizhishang_melmean_onmicrosoft_com/EtAkxsMNlmdPpZHWqZ58HFwB7N9gjCSvkD88iCn661RZmQ">资源共享目录（只读）</a></div>
+                    需要今天的课件？在这里寻找。
+                    <br>
+                    <a href="https://melmean-my.sharepoint.com/:f:/g/personal/tianjizhishang_melmean_onmicrosoft_com/EtAkxsMNlmdPpZHWqZ58HFwB7N9gjCSvkD88iCn661RZmQ">OneDrive</a>
+                </div>
+            </div>
+            <div class="section">
+                <div class="description">资源的贡献 ——</div>
+                <div class="link"><a href="https://melmean-my.sharepoint.com/:f:/g/personal/tianjizhishang_melmean_onmicrosoft_com/Eh8T6CtwnsFOsDIFawBoEmABU4bKRUlDjvUoFmMKcNq2Vw">资源共享目录（上传）</a></div>
+                    需要上传文件？点击这里。
+                    <br>
+                    <a href="https://melmean-my.sharepoint.com/:f:/g/personal/tianjizhishang_melmean_onmicrosoft_com/Eh8T6CtwnsFOsDIFawBoEmABU4bKRUlDjvUoFmMKcNq2Vw">OneDrive</a>
+                </div>
+            </div>
+        <div id="footer">
+            <div id="links">
+                <span class="caption">友情链接</span>
+                <a href="https://www.newinfinideas.cn/">新创无际</a>
+            </div>
+            <div class="left">
+                © 2023 MyBlueHorizon
+                <br>上一次更新于 2023/04/16
+            </div>
+            <div class="right">
+                Original by INFINIDEAS 2015 - 2017
+                <br>site content under CC BY-SA 3.0 Unported.
+            </div>
+        </div>
+    </body>
 </html>
